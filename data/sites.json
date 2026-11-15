@@ -1,0 +1,10 @@
+{
+ "_about": "Curated landing sites. lat/lon in degrees, east longitude positive. approx=true means the coordinate is a representative point, not a surveyed landing point.",
+ "sites": [
+  {"key": "apollo11", "name": "Apollo 11, Tranquility Base", "program": "NASA Apollo (1969)", "lat": 0.674, "lon": 23.473, "approx": false, "note": "Equatorial reference: two weeks of sun, two weeks of night, Earth always overhead."},
+  {"key": "chandrayaan3", "name": "Chandrayaan-3 Vikram (Shiv Shakti point)", "program": "ISRO (2023)", "lat": -69.373, "lon": 32.319, "approx": false, "note": "High southern latitude landing by ISRO, a 2026 Space Apps partner agency."},
+  {"key": "im1", "name": "IM-1 Odysseus, near Malapert A", "program": "NASA CLPS / Intuitive Machines (2024)", "lat": -80.13, "lon": 1.44, "approx": false, "note": "First CLPS landing; south polar region."},
+  {"key": "malapert", "name": "Malapert massif summit area", "program": "Proposed south polar site", "lat": -85.99, "lon": 2.93, "approx": true, "note": "Tall mountain near the pole, often suggested for good Earth view and long daylight."},
+  {"key": "shackleton", "name": "Shackleton crater rim area", "program": "Artemis candidate region", "lat": -89.45, "lon": -137.3, "approx": true, "note": "Near the south pole, where some ridges see sunlight for most of the year."}
+ ]
+}

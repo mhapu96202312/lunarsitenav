@@ -1,0 +1,28 @@
+1
+00:00:00,080 --> 00:00:01,980
+Hi, we are Team Rimlight.
+
+2
+00:00:02,080 --> 00:00:05,937
+We chose lunar landing sites: at the pole, light is power.
+
+3
+00:00:06,037 --> 00:00:10,426
+Meet LunarSiteNav: compare Moon landing sites and dates in seconds.
+
+4
+00:00:10,526 --> 00:00:15,550
+It draws the Sun and Earth over real terrain, from NASA Horizons and LOLA.
+
+5
+00:00:15,650 --> 00:00:19,399
+Shackleton's rim keeps the Sun but loses Earth for days.
+
+6
+00:00:19,499 --> 00:00:22,511
+Launch slips? The trade-off updates instantly.
+
+7
+00:00:22,611 --> 00:00:26,960
+Next, any lander team checks power and Earth link before it flies.
+

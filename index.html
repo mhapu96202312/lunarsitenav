@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LunarSiteNav | Compare Moon landing sites and dates</title>
+<meta name="description" content="Compare lunar landing sites and dates in seconds: Sun and Earth above the real LOLA terrain horizon, sunlight and direct-to-Earth windows, and what a launch slip does. JPL Horizons + LRO LOLA. NASA Space Apps 2026.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2214%22 fill=%22%23cfd6e6%22/%3E%3Cpath d=%22M2 22 Q10 15 16 19 T30 17 V30 H2Z%22 fill=%22%23596480%22/%3E%3Ccircle cx=%2224%22 cy=%2210%22 r=%224%22 fill=%22%23ffd25a%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><div class="logo" aria-hidden="true"></div><div><h1>LunarSiteNav</h1><p>Sun, Earth and terrain for any landing site and date, in one glance</p></div></div>
+  <div class="when"><label>Landing date and time (UTC)<input id="t" type="range" min="0" value="0"></label><output id="tLbl"></output>
+    <div class="slip"><button data-d="-7">-7 d</button><button data-d="-1">-1 d</button><button data-d="1">+1 d</button><button data-d="7">+7 d</button><button data-d="14">Launch slips 14 d</button></div></div>
+</header>
+<main>
+  <aside class="sites card"><h2>Sites</h2><p class="muted small">Click to focus. Tick up to 3 to compare.</p><div id="sites"></div></aside>
+  <section class="mainCol">
+    <div class="card">
+      <div class="row"><h2 id="panTitle"></h2><div id="status" class="status"></div></div>
+      <svg id="pan" viewBox="0 0 1200 380" role="img" aria-label="Horizon panorama with Sun and Earth"></svg>
+      <p class="muted small">Grey: terrain horizon from NASA LRO LOLA topography (up to 200 km away). Yellow: the Sun, blue: Earth, at the chosen time, from JPL Horizons. Dotted lines: their paths over the next 14 days. Vertical scale is stretched so low polar angles are readable.</p>
+    </div>
+    <div class="card">
+      <div class="row"><h2>92-day outlook</h2><div class="legend"><span><b class="both"></b>Sun and Earth</span><span><b class="sun"></b>Sun only</span><span><b class="earth"></b>Earth only</span><span><b class="none"></b>Dark and no direct link</span></div></div>
+      <div id="strips"></div>
+    </div>
+    <div class="card"><h2>Compare</h2><div id="table"></div></div>
+  </section>
+</main>
+<footer>Ephemeris: NASA JPL Horizons API (observer on the Moon, geodetic, hourly). Terrain: NASA LRO LOLA LDEM_16 (about 1.9 km per pixel) from the PDS Geosciences Node. Hills smaller than about 2 km are not resolved, so sunlit fractions are upper bounds; check final sites in LROC QuickMap or Moon Trek. Built for NASA Space Apps 2026, challenge "Lunar Landing Site Navigator". Not an official NASA product.
+<span class="si">SI disclosure: code written with SI assistance (Claude) and reviewed by the team.</span></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
